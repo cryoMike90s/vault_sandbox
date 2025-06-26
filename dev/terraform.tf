@@ -7,7 +7,7 @@ terraform {
 }
 
 provider "vault" {
-  address = "${var.vault_server}"
-  token = "${var.root_token}"
+  address = var.vault_server
+  token   = var.root_token
 }
 
